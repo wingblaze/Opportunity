@@ -1,5 +1,6 @@
 package com.vergara.mp.card.asset;
 
-public class StockInvestment extends AssetCard {
+public class StockInvestment extends AssetCard
+{
 
 }

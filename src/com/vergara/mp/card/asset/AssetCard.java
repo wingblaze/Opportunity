@@ -1,5 +1,14 @@
 package com.vergara.mp.card.asset;
 
-public class AssetCard extends Card {
+import com.vergara.mp.card.Card;
 
+public class AssetCard extends Card
+{
+
+	@Override
+	public void use() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
