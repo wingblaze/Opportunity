@@ -3,6 +3,8 @@ package com.vergara.mp;
 import java.util.ArrayList;
 
 import com.vergara.mp.card.Card;
+import com.vergara.mp.card.InvestmentCard;
+import com.vergara.mp.card.property.PropertyCard;
 
 public class Player 
 {
@@ -10,6 +12,7 @@ public class Player
 	private ArrayList<Card> Hand;
 	private ArrayList<Card> Deck;
 	private int Cash;
+	private Field field;
 	
 	public String getName() 
 	{
@@ -54,37 +57,53 @@ public class Player
 	/**
 	 * Draw card function.
 	 */
-	public void investOpportunity()
+	public ArrayList<Card> investOpportunity()
 	{
+		ArrayList<Card> drawnCards = new ArrayList<Card>();
 		
+		// draw from the deck.remove()
+		
+		return drawnCards ;	
 	}
 	/**
-	 * Purchase card drawn.
+	 * Play Investment Card onto field from the hand.
 	 */
-	public void purchaseCard()
+	public void purchaseInvestment(InvestmentCard card)
 	{
-		
+		// subtract from player cash based on price of the card
+		// Cash -= c.getPrice()
+		Hand.remove(card);
+		field.useInvestment(card);
 	}
 	/**
 	 * Invests on property card selected
 	 */
-	public void investProperty()
+	public void investProperty(PropertyCard primeInvestment)
 	{
-		
+		// checks if primeInvestment
 	}
 	/**
 	 * Makes selected property card on asset/property field into the prime investment.
 	 */
-	public void primeInvestment()
+	public void setPrimeInvestment(PropertyCard card)
 	{
+		// check if empty; else switch places
+		ArrayList<InvestmentCard> investmentSpace = field.getInvestmentSpace();
+		int index = investmentSpace.indexOf(card);
+		investmentSpace.remove(card);
 		
+		PropertyCard insert = field.getPrimeInvestment();
+		investmentSpace.add(index, insert);
+		
+		field.setPrimeInvestment(card);
 	}
 	/**
 	 * Sells the selected Property or Asset Card
 	 */
-	public void sellCard()
+	public void sellInvestment(InvestmentCard card)
 	{
-		
+		field.removeInvestment(card);
+		//get some cash based on card selling price
 	}
 	/**
 	 * Uses the event card selected

@@ -1,8 +1,8 @@
 package com.vergara.mp.card.asset;
 
-import com.vergara.mp.card.Card;
+import com.vergara.mp.card.InvestmentCard;
 
-public class AssetCard extends Card
+public class AssetCard extends InvestmentCard
 {
 
 	@Override
