@@ -155,7 +155,7 @@ public class PlayerPane extends JPanel{
 	public ArrayList<Card> getHand(){
 		ArrayList<Card> cardsInHand = new ArrayList<>();
 		
-		for(Component cardObj:handScrollPane.getComponents())
+		for(Component cardObj:handPanel.getComponents())
 			cardsInHand.add((Card)cardObj);
 		
 		return cardsInHand;
