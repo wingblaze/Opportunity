@@ -2,6 +2,8 @@ package com.vergara.mp;
 
 import java.util.ArrayList;
 
+import com.vergara.mp.card.Card;
+
 public class Player 
 {
 	private String Name;
@@ -40,5 +42,56 @@ public class Player
 	public void setCash(int cash)
 	{
 		Cash = cash;
-	}	
+	}
+	
+	/**
+	 * Ends the current players' turn.
+	 */
+	public void endTurn()
+	{
+		
+	}
+	/**
+	 * Draw card function.
+	 */
+	public void investOpportunity()
+	{
+		
+	}
+	/**
+	 * Purchase card drawn.
+	 */
+	public void purchaseCard()
+	{
+		
+	}
+	/**
+	 * Invests on property card selected
+	 */
+	public void investProperty()
+	{
+		
+	}
+	/**
+	 * Makes selected property card on asset/property field into the prime investment.
+	 */
+	public void primeInvestment()
+	{
+		
+	}
+	/**
+	 * Sells the selected Property or Asset Card
+	 */
+	public void sellCard()
+	{
+		
+	}
+	/**
+	 * Uses the event card selected
+	 */
+	public void useEvent()
+	{
+		
+	}
 }
+
